@@ -1,0 +1,77 @@
+.grow {
+	transition: all .3s ease-in-out;
+	transform: scale(0.9);
+}
+
+.grow:hover, .grow:focus {
+	transform: scale(1);
+}
+
+.books {
+	margin: auto;
+	padding-bottom:50px;
+	padding-top: 20px;
+}
+
+.bookContainer img {
+	margin-bottom:5px;
+  }
+
+body, html {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+body {
+	text-align:center;
+	font-family: 'Quicksand', sans-serif;
+	background-image: url("bg/0.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	animation: animate 60s ease-in-out infinite;
+  }
+  
+  @keyframes animate{
+	0%, 100% {
+	  background-image: url("bg/1.jpg");
+	}
+	25% {
+	  background-image: url("bg/2.jpg");
+	}
+	50% {
+	  background-image: url("bg/3.jpg");
+	}
+	75% {
+	  background-image: url("bg/4.jpg");
+	}
+	85% {
+	  background-image: url("bg/5.jpg");
+	  }
+	95% {
+	  background-image: url(".bg/6.jpg");
+	}
+  }
+		
+
+#page {
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	max-width: 1100px;
+}
+
+.bookContainer {
+	display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+	
+	.grow {
+		transform: scale(0.9);
+	}
+}

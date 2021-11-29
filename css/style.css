@@ -1,0 +1,49 @@
+body, html {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+body {
+	text-align:center;
+	font-family: 'Quicksand', sans-serif;
+	background-image: url("bg/0.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	animation: animate 60s ease-in-out infinite;
+  }
+  
+  @keyframes animate{
+	0%, 100% {
+	  background-image: url("bg/1.jpg");
+	}
+	25% {
+	  background-image: url("bg/2.jpg");
+	}
+	50% {
+	  background-image: url("bg/3.jpg");
+	}
+	75% {
+	  background-image: url("bg/4.jpg");
+	}
+	85% {
+	  background-image: url("bg/5.jpg");
+	  }
+	95% {
+	  background-image: url(".bg/6.jpg");
+	}
+  }
+.headline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.headline h2 {
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 800px) {
+}
